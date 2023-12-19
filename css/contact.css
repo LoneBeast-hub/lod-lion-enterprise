@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #dbdbdb;
+    --primary-color: #222222;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* hero */
+.hero {
+    width: 100%;
+    height: 100vh;
+    max-height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url("../assets/home_hero.jpg");
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.bg-overlay {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+}
+
+.hero-adjuster {
+    width: 90%;
+    margin: auto;
+    max-width: 1280px;
+    position: relative;
+}
+
+.hero-heading {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 600;
+    font-family: 'Poppins bold';
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Poppins bold';
+    font-weight: 500;
+}
+
+.hero-cta {
+    background-color: #fff;
+    border: 0;
+    border-radius: 6px;
+    padding: 12px 24px;
+    color: var(--primary-color);
+}
+
+/* contact section */
+.contact-section {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 100px 0;
+}
+
+.contact-section-adjuster {
+    width: 90%;
+    margin: auto;
+    max-width: 1280px;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+}
+
+.contact-section-adjuster .heading {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.contact-section-adjuster .phone {
+    margin: 20px 0;
+}
+
+.contact-section-adjuster form {
+    border: 1px solid #fff;
+    padding: 50px;
+    max-width: 40%;
+}
+
+.contact-section-adjuster form label {
+    display: block;
+    font-size: 15px;
+    font-family: 'Poppins bold';
+    font-weight: 700;
+}
+
+.contact-section-adjuster form input, .contact-section-adjuster form textarea {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.contact-section-adjuster form .flex {
+    display: flex;
+    gap: 3%;
+}
+
+.contact-section-adjuster form .send-btn {
+    margin-top: 10px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 0;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    /* hero */
+    .hero-heading {
+        font-size: 44px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    /* contact */
+    .contact-section-adjuster {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-section-adjuster form {
+        max-width: 100%;
+    }
+    
+    .contact-section-adjuster form .flex {
+        flex-direction: column;
+    }
+}
