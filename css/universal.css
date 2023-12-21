@@ -57,6 +57,7 @@ body {
 .nav-links {
     display: flex;
     padding: 10px 0;
+    align-items: center;
 }
 
 .nav-links li a {
@@ -67,8 +68,25 @@ body {
     transition: color 0.25s ease-in-out;
 }
 
+.nav-links li a.nav-btn {
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    background: #fff;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.25s ease-in-out;
+}
+
 .nav-links li a:hover {
-    color: #ffffff;
+    color: #fff;
+}
+
+.nav-links li a.nav-btn:hover {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
 }
 
 .menu-bar {
