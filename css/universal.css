@@ -119,6 +119,13 @@ body {
     flex: 1;
 }
 
+.super-footer .contact {
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .super-footer .heading {
     font-weight: 700;
     font-family: 'Poppins bold';
@@ -139,7 +146,7 @@ body {
 
 .super-footer .line div {
     width: 1px;
-    height: 190px;
+    height: 100%;
     background-color: #616161;
 }
 

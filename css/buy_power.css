@@ -94,6 +94,10 @@ ul {
     gap: 3%;
 }
 
+.contact-section-adjuster .info {
+    flex: 1;
+}
+
 .contact-section-adjuster .heading {
     font-weight: 700;
     font-size: 24px;
@@ -104,6 +108,7 @@ ul {
 }
 
 .contact-section-adjuster form {
+    flex: 1;
     border: 1px solid #fff;
     padding: 50px;
     max-width: 40%;
@@ -122,11 +127,6 @@ ul {
     margin-bottom: 10px;
     padding: 10px;
     font-size: 18px;
-}
-
-.contact-section-adjuster form .flex {
-    display: flex;
-    gap: 3%;
 }
 
 .contact-section-adjuster form .send-btn {
