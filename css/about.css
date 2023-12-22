@@ -77,8 +77,16 @@ ul {
     align-items: center;
 }
 
+.mission-adjuster .img {
+    flex: 1;
+}
+
 .mission-adjuster .img img {
     width: 100%;
+}
+
+.mission-adjuster .info {
+    flex: 1;
 }
 
 .mission-adjuster .info .heading {
